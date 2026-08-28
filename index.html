@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WAKESOL · Engineered Everyday Essentials</title>
+  <meta name="description" content="Everyday, considered differently. Join the list for exclusive launch access." />
+  <meta name="theme-color" content="#F27A0B" />
+
+  <!-- Fonts: Gambarino Regular (Fontshare) + Manrope (Google Fonts) -->
+  <link rel="preconnect" href="https://api.fontshare.com" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://api.fontshare.com/v2/css?f[]=gambarino@400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..800;1,9..144,400..800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Canvas Confetti Library -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ====================================================================
+       1. OPENING INTRO ANIMATION (High-Quality WAKESOL Logo on Orange)
+       ==================================================================== -->
+  <div class="intro-curtain" id="introCurtain" aria-hidden="true">
+    <div class="intro-logo-box" id="introLogoBox">
+      <!-- High Quality WAKESOL Logo Asset -->
+      <img 
+        src="assets/wakesol-hq-logo-transparent.png" 
+        alt="WAKESOL" 
+        class="intro-logo-img"
+        width="380"
+        height="150"
+      />
+      <div class="intro-loading-line">
+        <span class="intro-progress-bar"></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ====================================================================
+       2. BEIGE SPIRAL & NETWORK PATTERN (Noticeable, Smooth & Continuous)
+       ==================================================================== -->
+  <div class="bg-spiral-network-layer" aria-hidden="true">
+    <svg class="spiral-svg-art" viewBox="0 0 1400 1400" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <!-- Soft Beige Tone Matching the Card -->
+        <radialGradient id="spiralGlow" cx="50%" cy="50%" r="50%">
+          <stop offset="0%" stop-color="#F3E9D0" stop-opacity="0.45" />
+          <stop offset="60%" stop-color="#F3E9D0" stop-opacity="0.22" />
+          <stop offset="100%" stop-color="#F3E9D0" stop-opacity="0" />
+        </radialGradient>
+      </defs>
+
+      <!-- Central Subtle Ambient Aura -->
+      <circle cx="700" cy="700" r="500" fill="url(#spiralGlow)" />
+
+      <!-- Primary Rotating Spiral Group (Continuous Smooth Motion) -->
+      <g class="rotating-spiral-group">
+        <!-- Concentric Orbital Geometries (Noticeable Beige Strands) -->
+        <path d="M 700,700 m -50,0 a 50,50 0 1,0 100,0 a 50,50 0 1,0 -100,0" stroke="#F3E9D0" stroke-width="2.2" stroke-dasharray="6 8" opacity="0.65" />
+        <path d="M 700,700 m -110,0 a 110,110 0 1,0 220,0 a 110,110 0 1,0 -220,0" stroke="#F3E9D0" stroke-width="2.4" stroke-dasharray="10 10" opacity="0.58" />
+        <path d="M 700,700 m -185,0 a 185,185 0 1,0 370,0 a 185,185 0 1,0 -370,0" stroke="#F3E9D0" stroke-width="2.5" opacity="0.52" />
+        <path d="M 700,700 m -275,0 a 275,275 0 1,0 550,0 a 275,275 0 1,0 -550,0" stroke="#F3E9D0" stroke-width="2.4" stroke-dasharray="14 10" opacity="0.48" />
+        <path d="M 700,700 m -375,0 a 375,375 0 1,0 750,0 a 375,375 0 1,0 -750,0" stroke="#F3E9D0" stroke-width="2.6" opacity="0.44" />
+        <path d="M 700,700 m -485,0 a 485,485 0 1,0 970,0 a 485,485 0 1,0 -970,0" stroke="#F3E9D0" stroke-width="2.2" stroke-dasharray="18 12" opacity="0.40" />
+        <path d="M 700,700 m -605,0 a 605,605 0 1,0 1210,0 a 605,605 0 1,0 -1210,0" stroke="#F3E9D0" stroke-width="2.4" opacity="0.36" />
+        <path d="M 700,700 m -725,0 a 725,725 0 1,0 1450,0 a 725,725 0 1,0 -1450,0" stroke="#F3E9D0" stroke-width="2.0" stroke-dasharray="22 14" opacity="0.32" />
+
+        <!-- Dynamic Archimedean Spiral Arms -->
+        <path d="M700 700 C760 640 840 650 880 710 C930 780 910 880 830 930 C720 990 580 950 520 830 C450 690 500 520 650 440 C820 350 1020 410 1110 590 C1210 790 1140 1040 910 1150 C660 1270 370 1180 240 910 C90 610 200 270 520 120" stroke="#F3E9D0" stroke-width="2.8" stroke-linecap="round" opacity="0.55" />
+        <path d="M700 700 C640 760 560 750 520 690 C470 620 490 520 570 470 C680 410 820 450 880 570 C950 710 900 880 750 960 C580 1050 380 990 290 810 C190 610 260 360 490 250 C740 130 1030 220 1160 490 C1310 790 1200 1130 880 1280" stroke="#F3E9D0" stroke-width="2.8" stroke-linecap="round" opacity="0.55" />
+      </g>
+
+      <!-- Counter-Rotating Inner Harmonic Rings -->
+      <g class="counter-rotating-group">
+        <ellipse cx="700" cy="700" rx="340" ry="240" stroke="#F3E9D0" stroke-width="1.8" stroke-dasharray="12 8" opacity="0.45" transform="rotate(35 700 700)" />
+        <ellipse cx="700" cy="700" rx="520" ry="380" stroke="#F3E9D0" stroke-width="2.0" opacity="0.38" transform="rotate(-25 700 700)" />
+      </g>
+
+      <!-- Luminous Network Constellation Nodes -->
+      <g class="network-points-group">
+        <circle cx="880" cy="710" r="5" fill="#F3E9D0" opacity="0.75" />
+        <circle cx="520" cy="830" r="5" fill="#F3E9D0" opacity="0.75" />
+        <circle cx="650" cy="440" r="5.5" fill="#F3E9D0" opacity="0.8" />
+        <circle cx="1110" cy="590" r="6" fill="#F3E9D0" opacity="0.85" />
+        <circle cx="240" cy="910" r="5" fill="#F3E9D0" opacity="0.7" />
+        <circle cx="880" cy="570" r="4.5" fill="#F3E9D0" opacity="0.75" />
+        <circle cx="750" cy="960" r="5" fill="#F3E9D0" opacity="0.75" />
+        <circle cx="290" cy="810" r="5.5" fill="#F3E9D0" opacity="0.8" />
+        <circle cx="1160" cy="490" r="6" fill="#F3E9D0" opacity="0.85" />
+      </g>
+    </svg>
+  </div>
+
+  <div class="noise-grain" aria-hidden="true"></div>
+
+  <!-- ====================================================================
+       3. MAIN VIEWPORT & CENTRAL REFINED CARD OBJECT
+       ==================================================================== -->
+  <div class="viewport-stage">
+    
+    <!-- Central Card Object (Clean, Minimal, Warm Off-White) -->
+    <main class="wakesol-main-card" id="mainCard">
+
+      <!-- Top Header Row: WAKESOL Logo (Left) -->
+      <div class="card-top-bar">
+        <div class="card-corner-logo">
+          <!-- Exact High Quality Logo for Top Left -->
+          <img 
+            src="assets/wakesol-hq-logo-orange-transparent.png" 
+            alt="Wakesol" 
+            class="top-bar-logo-img"
+            width="120"
+            height="46"
+          />
+        </div>
+      </div>
+
+      <!-- Card Body Content -->
+      <div class="card-body">
+        
+        <!-- Overline Tag -->
+        <div class="card-overline">
+          COMING SOON &nbsp;·&nbsp; THE FIRST ESSENTIAL
+        </div>
+
+        <!-- Primary Display Headline (Gambarino Regular, Reduced & Refined Scale) -->
+        <h1 class="card-title">
+          Everyday, considered differently.
+        </h1>
+
+        <!-- Subheadline & Micro-Copy (Manrope) -->
+        <div class="card-subhead-group">
+          <h2 class="card-subtitle">Be the first to know when we launch.</h2>
+          <p class="card-early-access">Early access, 10% off your first order.</p>
+        </div>
+
+        <!-- Interactive Brevo-Integrated Waitlist Module -->
+        <div class="card-form-container">
+          <form 
+            id="brevoWaitlistForm" 
+            class="wakesol-waitlist-form" 
+            method="POST" 
+            action="#" 
+            data-brevo-form="waitlist"
+            novalidate
+          >
+            <!-- Brevo payload integration fields -->
+            <input type="hidden" name="utm_source" value="coming_soon_card" />
+            <input type="hidden" name="list_id" id="brevoListId" value="wakesol_vip_launch" />
+
+            <div class="pill-input-wrapper" id="pillWrapper">
+              <label for="emailInput" class="sr-only">Enter your email</label>
+              <input
+                type="email"
+                id="emailInput"
+                name="EMAIL"
+                class="pill-text-input"
+                placeholder="Enter your email"
+                autocomplete="email"
+                required
+              />
+              <button type="submit" class="pill-join-btn" id="joinBtn" aria-label="Join Waitlist">
+                <span class="join-text">Join</span>
+                <span class="join-arrow" aria-hidden="true">&rarr;</span>
+              </button>
+            </div>
+
+            <div class="form-feedback-msg" id="formFeedback" aria-live="polite"></div>
+          </form>
+
+          <!-- Success Card State: Replaced ! with a small sun logo -->
+          <div class="form-success-box" id="formSuccessBox" aria-hidden="true">
+            <div class="success-icon-wrap">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+            </div>
+            <div class="success-txt">
+              <h3 class="success-title-with-sun">
+                <span>You are on the list</span>
+                <!-- Small Elegant Sun Logo Icon -->
+                <svg class="sun-logo-glyph" width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="12" cy="12" r="5" fill="#F27A0B" />
+                  <path d="M12 2V4M12 20V22M4 12H2M22 12H20M5.636 5.636L7.05 7.05M16.95 16.95L18.364 18.364M5.636 18.364L7.05 16.95M16.95 7.05L18.364 5.636" stroke="#F27A0B" stroke-width="2.4" stroke-linecap="round" />
+                </svg>
+              </h3>
+              <p class="success-sub">Watch your inbox for the private launch invitation.</p>
+            </div>
+            <button type="button" class="reset-email-btn" id="resetBtn">Add another email</button>
+          </div>
+
+          <!-- Legal Consent Disclaimer (Manrope Regular) -->
+          <p class="card-disclaimer">
+            By joining you agree to receive launch emails from WAKESOL. Unsubscribe anytime.
+          </p>
+        </div>
+
+        <!-- Connect Divider -->
+        <div class="card-divider-wrap">
+          <span class="divider-dash left"></span>
+          <span class="divider-text">CONNECT WITH US</span>
+          <span class="divider-dash right"></span>
+        </div>
+
+        <!-- Social & Contact Touchpoints -->
+        <div class="card-social-links">
+          <!-- Email Button: Auto-drafts email to wecareaboutwakesol@gmail.com -->
+          <a 
+            href="mailto:wecareaboutwakesol@gmail.com?subject=WAKESOL%20Inquiry&body=Hi%20WAKESOL%20Team,%0D%0A%0D%0AI%20would%20like%20to%20know%20more%20about%20WAKESOL." 
+            class="social-icon-btn" 
+            id="emailContactLink" 
+            aria-label="Email WAKESOL (wecareaboutwakesol@gmail.com)" 
+            data-tooltip="wecareaboutwakesol@gmail.com"
+          >
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="4" width="20" height="16" rx="3"></rect>
+              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+            </svg>
+          </a>
+
+          <!-- Instagram Button: Official wakesol.co Instagram Link -->
+          <a 
+            href="https://www.instagram.com/wakesol.co?idsi=MXBsOXdidm1sbnZtaA==" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            class="social-icon-btn" 
+            aria-label="WAKESOL Instagram (@wakesol.co)" 
+            data-tooltip="Follow @wakesol.co"
+          >
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Brand Footer Tagline with Middle Dot (·) -->
+        <footer class="card-footer">
+          <p>WAKESOL &middot; Engineered Everyday Essentials</p>
+        </footer>
+
+      </div>
+
+    </main>
+
+  </div>
+
+  <!-- Floating Toast Notification -->
+  <div class="wakesol-toast" id="wakesolToast" role="alert" aria-live="assertive"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>

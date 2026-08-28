@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 180" width="100%" height="100%" fill="none">
+  <!-- Outer Oval Ring -->
+  <ellipse cx="230" cy="90" rx="212" ry="76" stroke="currentColor" stroke-width="7.5" fill="none" />
+  <!-- Brand Wordmark -->
+  <text 
+    x="230" 
+    y="114" 
+    text-anchor="middle" 
+    font-family="'Gambarino', 'Fraunces', Georgia, serif" 
+    font-size="82" 
+    font-weight="800" 
+    letter-spacing="-0.02em" 
+    fill="currentColor"
+  >Wakesol</text>
+</svg>
