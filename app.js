@@ -100,7 +100,7 @@ const initWakesol = () => {
     }
 
     try {
-      const response = await fetch('http://localhost:3001/api/join', {
+      const response = await fetch('https://wakesol-backend.onrender.com/api/join', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
