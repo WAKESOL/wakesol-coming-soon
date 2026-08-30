@@ -575,7 +575,7 @@ body {
 /* Consent Disclaimer (Manrope Regular) */
 .card-disclaimer {
   font-family: var(--font-secondary);
-  font-size: 0.72rem;
+  font-size: 0.68rem;
   line-height: 1.4;
   color: var(--wakesol-muted);
   margin-top: 14px;
