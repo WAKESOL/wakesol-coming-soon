@@ -362,9 +362,10 @@ body {
 
 .card-early-access {
   font-family: var(--font-secondary);
-  font-size: 0.98rem;
+  font-size: 0.90rem;
   font-weight: 500;
   color: var(--wakesol-subtext);
+  letter-spacing: 0.005em;
 }
 
 /* --------------------------------------------------------------------------
