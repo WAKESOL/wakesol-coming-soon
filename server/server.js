@@ -19,6 +19,13 @@ const server = http.createServer(async (req, res) => {
     return;
   }
 
+  // Health check endpoint — keeps the service responsive
+  if (req.method === 'GET' && req.url === '/health') {
+    res.writeHead(200, { 'Content-Type': 'application/json' });
+    res.end(JSON.stringify({ ok: true }));
+    return;
+  }
+
   // Only accept POST requests to /api/join
   if (req.method !== 'POST' || req.url !== '/api/join') {
     res.writeHead(404, { 'Content-Type': 'application/json' });
